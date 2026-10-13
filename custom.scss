@@ -1,0 +1,37 @@
+/*-- scss:defaults --*/
+
+$presentation-font-size-root:	30px;
+
+.div-pro {
+  // Remove the default bullet type so we can fully control the marker
+  list-style-type: none;
+  padding-left: 1.5em; // keep natural indentation (tweak as needed)
+
+  li {
+    &::marker {
+      content: "✔ ";      // this *is* the bullet now
+      color: #2ecc71;     // green checkmark
+      font-weight: bold;
+      font-size: 1em;     // adjust if you want a larger/smaller check
+    }
+  }
+}
+
+.div-con {
+  // Remove the default bullet type so we can fully control the marker
+  list-style-type: none;
+  padding-left: 1.5em; // keep natural indentation (tweak as needed)
+
+  li {
+    &::marker {
+      content: "⭙ ";      // this *is* the bullet now
+      color: #ff0000;     // green checkmark
+      font-weight: bold;
+      font-size: 1em;     // adjust if you want a larger/smaller check
+    }
+  }
+}
+
+.title {
+  color: blue;
+} 
